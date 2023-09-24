@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Program 5A</title>
+	</head>
+	<body>
+		<center>
+			<script>
+				var n = prompt("Enter a Number: ");
+				document.write("<h1>Fibonacci Series " + n + " Numbers</h1>");
+				var n1 = Number(n);
+				if(n1 > 0)
+				{
+					var num1 = 0, num2 = 1;
+					if(n1 == 1)
+					{
+						document.write(num1);				
+					}
+					else
+					{
+						document.write("<h3>" + num1 + "<br></h3>");
+						document.write("<h3>" + num2 + "<br></h3>");
+						for(var i = 3; i <= n1; i++)
+						{
+							var num3 = num1 + num2;
+							document.write("<h3>" + num3 + "<br></h3>");
+							num1 = num2;
+							num2 = num3;
+						}
+					}
+				}
+				else
+				{
+					alert("Invalid Number");
+				}
+			</script>
+		</center>
+	</body>
+</html>
