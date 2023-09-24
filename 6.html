@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Capital</title>
+        <style>
+            h1{
+                text-align: center;
+                color:orange;
+            }
+            .textbox1
+            {
+                color:red;
+                font-weight:bolder;
+                font-size: small;
+            }
+
+        </style>
+        <script>
+            function display()
+            {
+                var a = document.getElementById("sbox1").value;
+                document.getElementById("sbox2").value = a;
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>SELECT THE COUNTRY NAME TO FIND ITS CAPITAL</h1>
+        <center>
+            <form action="">
+                Select Country <select name="country" id="sbox1" onclick="display()" required>
+                    <option value=""></option>
+                    <option value="NEW DELHI">India</option>
+                    <option value="CANBERRA" >AUSTRALIA</option>
+                    <option value="WASHINGTON D.C">AMERICA</option>
+                    <option value="LONDON">UNITED KINGDOM</option>
+                    <option value="BERLIN">GERMANY</option>
+                </select></br></br>
+                Capital <input type="text" class="textbox1" id="sbox2">
+            </form>
+        </center>
+    </body>
+</html>
