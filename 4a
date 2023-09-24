@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Program 4A</title>
+		<style>
+			h1{
+				color: red;
+				font-family: san-serif;
+			}
+
+			.t1{
+				color: blue;
+				text-decoration: overline;
+			}
+			
+			.t2{
+				color: hotpink;
+			}
+		</style>	
+	</head>
+	<body>
+		<h1>This header is in Red</h1>
+		<h2 class="t1">This head is in Blue</h2>
+		<p class="t2">This is normal text</p>
+	</body>
+</html>
