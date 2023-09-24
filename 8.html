@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>prg 8</title>
+        <style>
+            img {
+                max-width: 260px; /* Adjust this value as needed */
+                max-height: 280px; /* Adjust this value as needed */
+            }
+        </style>
+        <script language="javascript">
+            function preload()
+            {
+                topon= new Image(100, 50);
+                topon.src="1.jpeg";
+                topoff = new Image(100, 50);
+                topoff.src ="2.jpeg";
+            }
+            function myMouseOn(n)
+            {
+                preload();
+                imageON=eval(n+"on.src");
+                document.images[n].src=imageON;
+            }
+            function myMouseoff(n)
+            {
+                imageOFF = eval(n+"off.src");
+                document.images[n].src=imageOFF;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Demo for mouse over</h1>
+        <a href="#" onMouseOut="myMouseoff('top')"; onMouseOver="myMouseOn('top')";>
+        <img src="1.jpeg" alt="Show Next" name="top">
+        </a>
+    </body>
+</html>
